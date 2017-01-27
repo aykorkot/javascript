@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<title>Switcher les deux div</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
+			
+	</head>
+
+
+<body>
+
+	<div class="form-group">
+ 		<label for="nom">Name:</label>
+ 		<input type="text" class="form-control" id="nom">
+	  	<label for="prenom">Prénom:</label>
+	  	<input type="text" class="form-control" id="prenom">
+	</div>
+	
+	<div>
+		<button type="button" class="btn btn-info btn-md" id="ajouter" >Ajouter</button>
+		<!-- <input type="hidden" id="indexLigne" value="0" /> -->
+	</div>
+
+	<div id="btns">
+	</div>
+
+	<table class="table table-hover" id="table">
+
+	    <thead>
+	      <tr>
+	        <th>Nom</th>
+	        <th>Prénom</th>
+	        <th></th>
+	      </tr>
+	    </thead>
+
+	    <tbody id="infos"> 
+
+	    </tbody>
+
+	</table>
+	
+
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script> 
+<script type="text/javascript" src="js/scripts.js"></script> 
+
+
+</body>
+
+
+</html>
