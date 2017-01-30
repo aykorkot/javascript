@@ -41,3 +41,6 @@ document.getElementById('stop').onclick = function () {
 	clearInterval(set);
 }
 
+
+
+
