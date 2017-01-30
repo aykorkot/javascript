@@ -27,13 +27,10 @@ var set;
 }
 */
 
-
+var posIncrement = 0;
 function setTime(){
-	
-	var inp = document.getElementById("inp").value;
-	document.getElementById("inp").value=Number(inp) +10;
-	document.getElementById("div1").style.left=inp+"px";
-
+	posIncrement = posIncrement + 10;
+	document.getElementById("div1").style.left=posIncrement+"px";
 }
 
 document.getElementById('lancer').onclick = function () {
