@@ -1,0 +1,6 @@
+.ajout{border: 1px solid gray;border-radius: 5px;width: 20%;padding: 30px 45px;float: left;margin:0 2px}
+.ajout h2{margin-top: 0;}
+h2{text-align: center;}
+.contacts {margin: 0 2px;padding: 0px 20px;float: left;width: 47%;border: 1px solid gray;border-radius: 5px;}
+.favoris{margin: 0 2px;padding: 0px 20px;float: left;width: 32%;border: 1px solid gray;border-radius: 5px;}
+.contacts .table{width: 75%;}
