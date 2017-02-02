@@ -1,21 +1,32 @@
 
 var cpt=0;
 var setTimes;
-var posIncrement=0;
+var position=0;
 var w = window.innerWidth;
-console.log(w)
+var posDiv="left";
+var widthDiv = document.getElementById('div1').offsetWidth;
+
+
+console.log(w);
 //operation
 function setTime(){
 
-
 	// deplacement du div
-	if(posIncrement>w){
-		posIncrement = 0;
-		document.getElementById("div1").style.left=posIncrement+"px";
+	
+	if(posDiv=="left"){	
+		position = position + 10;
+		document.getElementById('div1').style.left=position+"px";
+		if(position>w-widthDiv){
+			posDiv="right";
+		}
+		console.log(position);
 	}else{
-		posIncrement = posIncrement + 10;
-		document.getElementById("div1").style.left=posIncrement+"px";
-		console.log(posIncrement);
+		position = position - 10;
+		document.getElementById('div1').style.left=position+"px";
+		if(position<1){
+			posDiv="left";
+		}
+		console.log(position)
 	}
 
 	//changement de couleur du div
@@ -26,8 +37,9 @@ function setTime(){
    		document.getElementById('div1').style.background="red";
    		cpt=0;
 	}
-	console.log(posIncrement);
+
 }
+
 
 // lancer l'operation
 document.getElementById('lancer').onclick = function () {
@@ -36,7 +48,7 @@ document.getElementById('lancer').onclick = function () {
 	if(lancer=="Lancer"){
 		document.getElementById('lancer').value = "Pause";
 		document.getElementById('lancer').className="btn stop btn-warning";
-		setTimes = setInterval(setTime,50);
+		setTimes = setInterval(setTime,10);
 	}
 	// faire pause a l'operation
 	else{
